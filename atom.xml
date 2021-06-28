@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-06-16T05:17:35.459Z</updated>
+  <updated>2021-06-28T08:06:06.757Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://example.com/2021/06/16/%E8%BE%A3%E9%B8%A1%E5%89%8D%E7%AB%AF%E7%9F%A5%E9%81%93%E5%95%A5/"/>
-    <id>http://example.com/2021/06/16/%E8%BE%A3%E9%B8%A1%E5%89%8D%E7%AB%AF%E7%9F%A5%E9%81%93%E5%95%A5/</id>
-    <published>2021-06-16T05:17:35.304Z</published>
-    <updated>2021-06-16T05:17:35.459Z</updated>
-    
-    <content type="html"><![CDATA[<ol><li><!--腾讯视频（b站)-->**渡一教育** 2021权威HTML+CSS零基础入学视频中淘宝静态页面，</li><li><p>可用资料（1）<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference</a>  <em>第二官方靠谱</em>（2）<a href="https://www.w3school.com.cn/h.asp*%E9%80%82%E5%90%88%E6%96%B0%E6%89%8B">https://www.w3school.com.cn/h.asp*适合新手</a>*</p></li><li><p>Javascript可看可不看,时间长上手慢，需要实战长时间磨，细节多，内容多，<u>知道BOM \DOM</u>，怎样向页面添加 JavaScript</p></li><li><p>jQuery 是一个 JavaScript 库。（常用$)//公司不用忽略</p></li><li><p>Vue 官网<a href="https://cn.vuejs.org/v2/guide/%EF%BC%8C%E6%8E%A8%E8%8D%90%E8%A7%86%E9%A2%91https://learning.dcloud.io/#/?vid=0">https://cn.vuejs.org/v2/guide/，推荐视频https://learning.dcloud.io/#/?vid=0</a>  </p><p>//理解这个框架干啥，优势，了解vue组件，单页面应用，</p><p>//知道页面生命周期</p><p>//Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。如果您需要构建一个中大型单页应用，您很可能会考虑如何更好地在组件外部管理状态，Vuex 将会成为自然而然的选择</p><p>//Vue Router 是Vue.js 官方的路由（地址，跳转）管理器，</p></li><li><p>Bootstrap 推荐视频  <!--b站--> 小马技术  官网<a href="https://v5.bootcss.com/">https://v5.bootcss.com/</a></p><p>//比较少用（odoo就用了，Bootstrap 很有想法，get到他的点），</p></li></ol><p>以上是基础，简单理解明白懂得作用，可以只看某些视频，前一两章技术介绍，</p><h2 id="UI框架"><a href="#UI框架" class="headerlink" title="UI框架"></a>UI框架</h2><p>引用+复制黏贴官方文档代码</p><ul><li><a href="https://element.eleme.cn/#/zh-CN">Element UI</a>   //后台管理系统常用</li><li><a href="https://iviewui.com/docs/introduce">iView </a>  是一个 UI 工具包，其中包含简洁又设计优雅的小部件和各种组件</li><li><a href="https://bootstrap-vue.org/docs">BootstrapVue</a>    BootstrapVue 将 Vue 和最流行的 CSS 库相结合//知道这个名字即可</li><li><a href="https://ant.design/docs/react/introduce-cn">Ant Design</a> 等等~~~</li></ul><p>十几种ui框架，公司用那个进官网，看两眼，</p><h2 id="乱七八糟的技术"><a href="#乱七八糟的技术" class="headerlink" title="乱七八糟的技术"></a>乱七八糟的技术</h2><h2 id><a href="#" class="headerlink" title></a><img src="/2021/06/16/%E8%BE%A3%E9%B8%A1%E5%89%8D%E7%AB%AF%E7%9F%A5%E9%81%93%E5%95%A5/Users/qtyun/Desktop/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB.jpg" alt="前端知识体系"></h2><p>知道名字，装X，</p><p><em>数据可视化</em>   echarts我就知道这个，对不起我菜，</p><p>还要一些api//比如地图对接百度地图，谷歌地图自己的api，</p><p>根据项目（产品）的具体内容，百度！前端口中的技术，</p><p>等等等等等等等等，花里胡哨的</p><p>！！找一份前端大佬的简历，能了解更多前端技术！！</p><p>有一份简单的源码，知道各块代码的功能，复制，可快速上手，</p><p>并不详细，旨在简单快速，</p><p> <strong>阮一峰一些技术博客文档写的非常推荐</strong></p><p>一个菜逼的胡诌八扯，不要当真，😏</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;ol&gt;
-&lt;li&gt;&lt;!--腾讯视频（b站)--&gt;**渡一教育** 2021权威HTML+CSS零基础入学视频中淘宝静态页面，
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;可用资料（1）&lt;a href=&quot;https://developer.mozilla.org/zh-CN/docs/Web/HTM</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title></title>
