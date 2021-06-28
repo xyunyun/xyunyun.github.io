@@ -1,0 +1,176 @@
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  
+    <link rel="icon" href="/images/favicon.ico">
+  
+  <title>Hexo</title>
+  
+<link rel="stylesheet" href="/css/styles.css">
+
+  
+<script src="/lib/jquery.js"></script>
+
+  
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+
+  
+<script src="/js/common.js"></script>
+
+  
+<script src="/lib/bootstrap/js/bootstrap.js"></script>
+
+  
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+  <body>
+    <header class="header">
+  <div class="color-bar">
+    <ul>
+      <li class="bar1"></li>
+      <li class="bar2"></li>
+      <li class="bar3"></li>
+      <li class="bar4"></li>
+      <li class="bar5"></li>
+      <li class="bar6"></li>
+    </ul>
+  </div>
+  <div class="header-wrapper">
+    <div class="blog-title">
+      
+        <img class="logo" src="/images/logo.png" alt="logo">
+      
+      <a href="/" class="title">Hexo</a>
+    </div>
+    <nav class="navbar navbar-menu">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" id="nav-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+      </div>
+        <ul class="menu menu-pc">
+          
+            <li class="menu-item">
+              <a href="/homes" class="menu-item-link"><i class="fa fa-home"></i><span>首页</span></a>
+            </li>
+          
+            <li class="menu-item">
+              <a href="/archives/" class="menu-item-link"><i class="fa fa-file"></i><span>归档</span></a>
+            </li>
+          
+            <li class="menu-item">
+              <a target="_blank" rel="noopener" href="https://github.com/xyunyun" class="menu-item-link"><i class="fa fa-github"></i><span>Github</span></a>
+            </li>
+          
+        </ul>
+    </nav>
+  </div>
+</header>
+<div class="collapse nav-collapse" style="position:fixed;top:59px;" id="bs-example-navbar-collapse-1">
+  <ul class="menu menu-mobile" style="list-style:none">
+    
+      <li class="menu-item">
+        <a href="/homes" class="menu-item-link"><i class="fa fa-home"></i><span>首页</span></a>
+      </li>
+    
+      <li class="menu-item">
+        <a href="/archives/" class="menu-item-link"><i class="fa fa-file"></i><span>归档</span></a>
+      </li>
+    
+      <li class="menu-item">
+        <a target="_blank" rel="noopener" href="https://github.com/xyunyun" class="menu-item-link"><i class="fa fa-github"></i><span>Github</span></a>
+      </li>
+    
+  </ul>
+</div>
+
+    <main class="main">
+      <div class="content">
+        
+  <article class="post">
+    <!-- <div class="post-title">
+      <h2 class="title">odoo14</h2>
+       
+    </div> -->
+     <div class="post-meta">
+      <span class="post-time">2021-01-13</span>
+    </div>
+    <div class="post-content">
+      <hr>
+<p><u>odoo 资料：<a target="_blank" rel="noopener" href="http://www.odoov.com/">http://www.odoov.com/</a></u></p>
+<p><u>d数据库地址<a target="_blank" rel="noopener" href="http://localhost:8069/web/database/selector">http://localhost:8069/web/database/selector</a></u></p>
+<p><strong>问：忘记后台登录密码？</strong></p>
+<p># 生成加密的密码</p>
+<p>frompasslib.contextimportCryptContext</p>
+<p>printCryptContext([‘pbkdf2_sha512’]).encrypt(‘123456’)</p>
+<p>#进入数据库（以默认 odoo 为例）</p>
+<p>sudo su-postgres</p>
+<p>\c odoo</p>
+<p># 更新密码（假设用为 id 为 1，可通过 SELECT 进行查询）</p>
+<p>UPDATE res_users SET password_crypt=’your new password hash’WHEREid=2;</p>
+<p>odoo命令行</p>
+<p>创建新模块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python odoo-bin scaffold &lt;module name&gt; &lt;where to put it&gt;</span><br></pre></td></tr></table></figure>
+<p>运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$python odoo-bin -c odoo.conf</span><br></pre></td></tr></table></figure>
+
+    </div>
+  </article>
+  <div class="post-nav">
+    <div class="post-nav-next post-nav-item">
+      
+        <a href="/2020/12/29/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E8%AE%BE%E7%BD%AE%E8%B7%A8%E5%9F%9F/" rel="next" title="谷歌浏览器设置跨域">
+          <i class="fa fa-chevron-left"></i> 谷歌浏览器设置跨域
+        </a>
+      
+    </div>
+
+    <span class="post-nav-divider"></span>
+
+    <div class="post-nav-prev post-nav-item">
+    
+        <a href="/2021/02/03/note/" rel="prev" title="note">
+          note <i class="fa fa-chevron-right"></i>
+        </a>
+      
+    </div>
+  </div>
+
+
+
+      </div>
+        <div class="footer">
+  <div class="footer-wrapper">
+    <div class="copyright">
+      <!-- 
+      <span>&copy;</span>
+      
+      <span>2017 - 2021</span>
+      
+      <span class="author"><i class="fa fa-user"></i>John Doe</span>
+    </div>
+    
+      <span>由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</span>
+    
+    
+      <span>|</span> <span>主题 - <a target="_blank" rel="noopener" href="https://github.com/littleee/corazon">Corazon</a></span>
+      
+        <span>v1.0.0</span>
+      
+     -->
+    页脚
+  </div>
+</div>
+
+    </main>
+  </body>
+</html>
