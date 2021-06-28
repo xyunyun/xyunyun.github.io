@@ -1,0 +1,224 @@
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  
+    <link rel="icon" href="/images/favicon.ico">
+  
+  <title>Hexo</title>
+  
+<link rel="stylesheet" href="/css/styles.css">
+
+  
+<script src="/lib/jquery.js"></script>
+
+  
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+
+  
+<script src="/js/common.js"></script>
+
+  
+<script src="/lib/bootstrap/js/bootstrap.js"></script>
+
+  
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+  <body>
+    <header class="header">
+  <div class="color-bar">
+    <ul>
+      <li class="bar1"></li>
+      <li class="bar2"></li>
+      <li class="bar3"></li>
+      <li class="bar4"></li>
+      <li class="bar5"></li>
+      <li class="bar6"></li>
+    </ul>
+  </div>
+  <div class="header-wrapper">
+    <div class="blog-title">
+      
+        <img class="logo" src="/images/logo.png" alt="logo">
+      
+      <a href="/" class="title">Hexo</a>
+    </div>
+    <nav class="navbar navbar-menu">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" id="nav-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+      </div>
+        <ul class="menu menu-pc">
+          
+            <li class="menu-item">
+              <a href="/homes" class="menu-item-link"><i class="fa fa-home"></i><span>首页</span></a>
+            </li>
+          
+            <li class="menu-item">
+              <a href="/archives/" class="menu-item-link"><i class="fa fa-file"></i><span>归档</span></a>
+            </li>
+          
+            <li class="menu-item">
+              <a target="_blank" rel="noopener" href="https://github.com/xyunyun" class="menu-item-link"><i class="fa fa-github"></i><span>Github</span></a>
+            </li>
+          
+        </ul>
+    </nav>
+  </div>
+</header>
+<div class="collapse nav-collapse" style="position:fixed;top:59px;" id="bs-example-navbar-collapse-1">
+  <ul class="menu menu-mobile" style="list-style:none">
+    
+      <li class="menu-item">
+        <a href="/homes" class="menu-item-link"><i class="fa fa-home"></i><span>首页</span></a>
+      </li>
+    
+      <li class="menu-item">
+        <a href="/archives/" class="menu-item-link"><i class="fa fa-file"></i><span>归档</span></a>
+      </li>
+    
+      <li class="menu-item">
+        <a target="_blank" rel="noopener" href="https://github.com/xyunyun" class="menu-item-link"><i class="fa fa-github"></i><span>Github</span></a>
+      </li>
+    
+  </ul>
+</div>
+
+    <main class="main">
+      <div class="content">
+        
+  <article class="post">
+    <!-- <div class="post-title">
+      <h2 class="title">前端面试题</h2>
+       
+    </div> -->
+     <div class="post-meta">
+      <span class="post-time">2021-06-28</span>
+    </div>
+    <div class="post-content">
+      <h1 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h1><h2 id="v-if-vs-v-show"><a href="#v-if-vs-v-show" class="headerlink" title="v-if vs v-show"></a><a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/guide/conditional.html#v-if-vs-v-show"><code>v-if</code> vs <code>v-show</code></a></h2><p><code>v-if</code> 是“真正”的条件渲染，因为它会确保在切换过程中条件块内的事件监听器和子组件适当地被销毁和重建。</p>
+<p><code>v-if</code> 也是<strong>惰性的</strong>：如果在初始渲染时条件为假，则什么也不做——直到条件第一次变为真时，才会开始渲染条件块。</p>
+<p>相比之下，<code>v-show</code> 就简单得多——不管初始条件是什么，元素总是会被渲染，并且只是简单地基于 CSS display 进行切换。</p>
+<p>一般来说，<code>v-if</code> 有更高的切换开销，而 <code>v-show</code> 有更高的初始渲染开销。因此，如果需要非常频繁地切换，则使用 <code>v-show</code> 较好；如果在运行时条件很少改变，则使用 <code>v-if</code> 较好。</p>
+<h2 id="Vue生命周期"><a href="#Vue生命周期" class="headerlink" title="Vue生命周期"></a>Vue生命周期</h2><p>创建阶段<br>beforeCreate<br>实例刚在内存中被创建出来，此时，还没有初始化好data和methods属性。<br>created<br>实例已经在内存中创建完毕，此时data和methods已经创建完成，此时还没有开始编译模板。<br>挂载阶段<br>beforeMount<br>此时已经完成了模板的编译，但是还没有挂载到页面中。<br>mounted<br>此时已经将编译好的模板挂载到了页面指定的容器中显示。<br>运行阶段<br>boforeUpdate<br>状态更新之前执行此类函数，此时data中的状态值是最新的，但是界面上显示的数据还是旧的，因为此时还没有开始重新渲染DOM节点。<br>updated<br>实例更新完毕之后调用此函数，此时data中的状态值和页面上显示的数据都已经完成了更新，界面已经被重新渲染好了。<br>销毁阶段<br>beforeDestroy<br>实例销毁之前调用，在这一步，实例仍然完全可用。<br>destroyed<br>Vue实例销毁后调用，调用后Vue实例指示的所有东西都会解除绑定，所有的事件监听器都会被移除，所有的子实例也会被销毁</p>
+<h2 id="vue双向数据绑定原理"><a href="#vue双向数据绑定原理" class="headerlink" title="vue双向数据绑定原理"></a>vue双向数据绑定原理</h2><p>vue.js 是采用数据劫持结合发布者-订阅者模式的方式，通过Object.defineProperty()来劫持各个属性的 setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。</p>
+<h2 id="vue单向数据流"><a href="#vue单向数据流" class="headerlink" title="vue单向数据流"></a>vue单向数据流</h2><h2 id="虚拟dom"><a href="#虚拟dom" class="headerlink" title="虚拟dom"></a>虚拟dom</h2><h2 id="组件中data为什么是一个函数"><a href="#组件中data为什么是一个函数" class="headerlink" title="组件中data为什么是一个函数"></a>组件中data为什么是一个函数</h2><h2 id="vue中组件之间的传值通信"><a href="#vue中组件之间的传值通信" class="headerlink" title="vue中组件之间的传值通信"></a>vue中组件之间的传值通信</h2><p>父组件向子组件传值：</p>
+<ul>
+<li>子组件在props中创建一个属性，用来接收父组件传来的值；</li>
+<li>在父组件中注册子组件；</li>
+<li>在子组件标签中添加props中创建的属性；把需要传给子组件的值赋给该属性</li>
+</ul>
+<p>子组件向父组件传值：</p>
+<ul>
+<li>子组件中以某种方法（如点击事件）触发一个自定义的事件；</li>
+<li>将需要传的值作为$emit的第二个参数，该值将作为实参传给响应事件的方法</li>
+</ul>
+<h2 id="计算属性和侦听属性"><a href="#计算属性和侦听属性" class="headerlink" title="计算属性和侦听属性"></a>计算属性和侦听属性</h2><p>计算属性是基于它们的响应式依赖进行缓存的，只在相关响应式依赖发生改变时它们才会重新求值；</p>
+<p>watch选项允许我们执行异步操作 (访问一个 API)，限制我们执行该操作的频率，并在我们得到最终结果前，设置中间状态。这些都是计算属性无法做到的</p>
+<h2 id="Vuex是什么"><a href="#Vuex是什么" class="headerlink" title="Vuex是什么"></a>Vuex是什么</h2><ul>
+<li><p>Vuex 是一个专为 Vue.js 开发的状态管理模式，Vuex 应用的核心就是 store</p>
+</li>
+<li><p>“store”基本上就是一个容器，它包含着你的应用中大部分的状态 (state)</p>
+</li>
+<li><p>state 就是<strong>数据源存放地</strong>，对应于⼀般 vue 对象⾥⾯的 data</p>
+</li>
+<li><p>Mutation  更改 Vuex 的 store 中的状态的<strong>方法</strong>是提交 mutation</p>
+</li>
+<li><p>getter可以认为是 store 的计算属性。getter 的返回值会根据它的依赖被缓存起来，且只有当它的依赖值发生了改变才会被重新计算。</p>
+</li>
+<li><p>Action 类似于 mutation，不同在于：</p>
+<p>Action 提交的是 mutation，而不是直接变更状态,数据改变不能被追踪到。</p>
+<p>Action 可以包含任意异步操作</p>
+</li>
+<li><p>Modules<strong>模块</strong>每个模块拥有自己的 state、mutation、action、getter、甚至是嵌套子模块</p>
+</li>
+</ul>
+<p>适用情况</p>
+<ul>
+<li>当一个组件需要多次派发事件时。例如购物车数量加减。</li>
+<li>跨组件共享数据、跨页面共享数据。例如订单状态更新。</li>
+<li>需要持久化的数据。例如登录后用户的信息。</li>
+<li>适用于多模块、业务关系复杂的中大型项目</li>
+</ul>
+<p>vuex-along （持久化存储 state 的 vuex 扩展常用于刷新网页后自动恢复 state）</p>
+<h2 id="vue-router路由模式有几种"><a href="#vue-router路由模式有几种" class="headerlink" title="vue-router路由模式有几种"></a>vue-router路由模式有几种</h2><h2 id="hash和history的实现原理"><a href="#hash和history的实现原理" class="headerlink" title="hash和history的实现原理"></a>hash和history的实现原理</h2><h2 id="vue怎么用vm-set-解决对象新增属性不能响应的问题"><a href="#vue怎么用vm-set-解决对象新增属性不能响应的问题" class="headerlink" title="vue怎么用vm.$set()解决对象新增属性不能响应的问题"></a>vue怎么用vm.$set()解决对象新增属性不能响应的问题</h2><h2 id="自定义指令"><a href="#自定义指令" class="headerlink" title="自定义指令"></a>自定义指令</h2><h2 id="vue过滤器"><a href="#vue过滤器" class="headerlink" title="vue过滤器"></a>vue过滤器</h2><h2 id="Vue-nextTick-的原理和用途"><a href="#Vue-nextTick-的原理和用途" class="headerlink" title="Vue.nextTick 的原理和用途"></a>Vue.nextTick 的原理和用途</h2><h2 id="混入"><a href="#混入" class="headerlink" title="混入"></a>混入</h2><h2 id="Element-UI-实现权限管理系统页面权限控制"><a href="#Element-UI-实现权限管理系统页面权限控制" class="headerlink" title="Element UI 实现权限管理系统页面权限控制"></a>Element UI 实现权限管理系统页面权限控制</h2><p>1 创建vue实例的时候将vue-router挂载，但这个时候vue-router挂载一些登录或者不用权限的公用的页面。</p>
+<p>2 当用户登录后，获取用role，将role和路由表每个页面的需要的权限作比较，生成最终用户可访问的路由表。</p>
+<p>3 调用router.addRoutes(store.getters.addRouters)添加用户可访问的路由。</p>
+<p>4 使用vuex管理路由表，根据vuex中可访问的路由渲染侧边栏组件。</p>
+<h2 id="proxy与object-defineProperty"><a href="#proxy与object-defineProperty" class="headerlink" title="proxy与object.defineProperty"></a>proxy与object.defineProperty</h2><h1 id="ECMAScript-6"><a href="#ECMAScript-6" class="headerlink" title="ECMAScript 6"></a><a target="_blank" rel="noopener" href="https://es6.ruanyifeng.com/">ECMAScript 6</a></h1><h2 id="操作运算符"><a href="#操作运算符" class="headerlink" title="操作运算符"></a>操作运算符</h2><h1 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h1><h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>基本数据类型（栈数据）Number String Boolean Undefind null Symbol</p>
+<p>引用值（堆数据） Array Object function</p>
+<h2 id="数组方法"><a href="#数组方法" class="headerlink" title="数组方法"></a>数组方法</h2><h2 id="为什么是单线程"><a href="#为什么是单线程" class="headerlink" title="为什么是单线程"></a>为什么是单线程</h2><h2 id="浅拷贝和深拷贝"><a href="#浅拷贝和深拷贝" class="headerlink" title="浅拷贝和深拷贝"></a>浅拷贝和深拷贝</h2><p>只针对像 Object, Array 这样的复杂对象的</p>
+<p>浅度拷贝：复制一层对象的属性，更深层次对象级别的只是拷贝引用，当改变拷贝的对象里面的引用类型时，源对象也会改变。<strong>Object.assign()</strong> </p>
+<p>深度拷贝：重新开辟一个内存空间，需要递归拷贝对象里的引用，直到子属性都为基本类型。两个对象对应两个不同的地址，修改一个对象的属性，不会改变另一个对象的属性。</p>
+<p>**<code>instanceof</code>**运算符用于检测构造函数的 <code>prototype</code> 属性是否出现在某个实例对象的原型链上。</p>
+<h2 id="防抖和节抖的区别"><a href="#防抖和节抖的区别" class="headerlink" title="防抖和节抖的区别"></a>防抖和节抖的区别</h2><h2 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h2><h2 id="什么是闭包"><a href="#什么是闭包" class="headerlink" title="什么是闭包"></a>什么是闭包</h2><p>闭包指有权访问另一个函数作用域中变量的<strong>函数</strong>，</p>
+<h2 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h2><p>闭包可以使在一个内层函数中访问到其外层函数的作用域，延伸了变量的作用范围，</p>
+<p>使用闭包来模拟私有方法。私有方法有利于限制对代码的访问：还提供了管理全局命名空间的强大能力，避免非核心的方法弄乱了代码的公共接口部分。</p>
+<p>闭包在处理速度和内存消耗方面对脚本性能具有负面影响。</p>
+<p>递归</p>
+<p>调用自身的函数我们称之为<em>递归函数</em></p>
+<h2 id="网页从打开到加载"><a href="#网页从打开到加载" class="headerlink" title="网页从打开到加载"></a>网页从打开到加载</h2><p><strong>1.进行DNS 解析</strong><br>浏览器首先搜索浏览器自身缓存的 DNS 记录。<br>如果浏览器缓存中没有找到需要的记录或记录已过期，则搜索 hosts 文件和操作缓存。<br>如果在 hosts 文件和操作系统缓存中没有找到需要的记录或记录已经过期，则向域名解析服<br>务器发送解析请求。<br>如果域名解析服务器也没有该域名的记录，则开始 递归 + 迭代 解析。<br>获取域名对应的IP后，一步步向上返回，直到返回给浏览器。<br>浏览器获取到 url 的 IP 地址。</p>
+<p><strong>2.发起TCP请求</strong><br>建立TCP连接的过程就是三次握手过程：客户端向服务器端发送连接请求的报文。<br>服务器端收到请求后，同意建立连接，向客户端发送确认报文。<br>客户端收到服务器端的确认报文后，再次向服务器端发出报文，确认已收到确认报文。<br>浏览器与服务器已经建立了TCP连接，开始进行通信。</p>
+<p><strong>3.浏览器向服务器发送http请求</strong><br>例如：浏览器发出取文件指令GET，HEAD方法请求一个与GET请求的响应相同的响应，但没有响应体，POST方法用于将实体提交到指定的资源，PUT方法用请求有效载荷替换目标资源的所有当前表示，DELETE方法删除指定的资源，PATCH方法用于对资源应用部分修改，TRACE方法沿着到目标资源的路径执行一个消息环回测试，OPTIONS方法用于描述目标资源的通信选项，CONNECT方法建立一个到由目标资源标识的服务器的隧道。</p>
+<p><strong>4.负载均衡</strong><br>什么是负载均衡？当一台服务器无法支持大量的用户访问时，将用户分摊到两个或多个服务器上<br>的方法叫负载均衡。<br>如果我们的平台配备了负载均衡的话，前一步 DNS 解析获得的IP地址应该是我们 Nginx 负<br>载均衡服务器的 IP 地址。所以，我们的浏览器将我们的网页请求发送到了 Nginx 负载均<br>衡服务器上。<br>Nginx 根据我们设定的分配算法和规则，选择一台后端的真实 Web 服务器，与之建立<br>TCP 连接、并转发我们浏览器发出去的网页请求。<br>Web 服务器收到请求，产生响应，并将网页发送给 Nginx 负载均衡服务器。<br>Nginx 负载均衡服务器将网页传递给 filters 链处理，之后发回给我们的浏览器。</p>
+<p><strong>5.服务器响应http请求，将请求的指定资源发送给浏览器</strong></p>
+<p>浏览器释放TCP连接<br>建立TCP连接的过程就是四次挥手过程：<br>浏览器向服务器发送释放连接报文。<br>服务器收到释放报文后，发出确认报文，然后将服务器上未传送完的数据发送完。<br>服务器数据传输完成后，向浏览器发送释放连接请求。<br>浏览器收到报文后，发出确认，然后等待一段时间后，释放TCP连接。</p>
+<p><strong>6.浏览器渲染</strong> </p>
+<p>浏览器根据页面内容，生成 DOM Tree 。根据 CSS 内容，生成 CSS Rule Tree (规则树)。<br>调用 JS 执行引擎执行 JS 代码。<br>根据 DOM Tree 和 CSS Rule Tree 生成 Render Tree (呈现树)。 3. 根据 Render Tree 渲染网页。</p>
+<h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h2><h2 id="移动端的适配"><a href="#移动端的适配" class="headerlink" title="移动端的适配"></a>移动端的适配</h2>
+    </div>
+  </article>
+  <div class="post-nav">
+    <div class="post-nav-next post-nav-item">
+      
+        <a href="/2021/06/15/2021%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="next" title="">
+          <i class="fa fa-chevron-left"></i> 
+        </a>
+      
+    </div>
+
+    <span class="post-nav-divider"></span>
+
+    <div class="post-nav-prev post-nav-item">
+    
+    </div>
+  </div>
+
+
+
+      </div>
+        <div class="footer">
+  <div class="footer-wrapper">
+    <div class="copyright">
+      <!-- 
+      <span>&copy;</span>
+      
+      <span>2017 - 2021</span>
+      
+      <span class="author"><i class="fa fa-user"></i>John Doe</span>
+    </div>
+    
+      <span>由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</span>
+    
+    
+      <span>|</span> <span>主题 - <a target="_blank" rel="noopener" href="https://github.com/littleee/corazon">Corazon</a></span>
+      
+        <span>v1.0.0</span>
+      
+     -->
+    页脚
+  </div>
+</div>
+
+    </main>
+  </body>
+</html>
