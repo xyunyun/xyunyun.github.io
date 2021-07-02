@@ -926,7 +926,7 @@ ul li a:focus {
 }
 #article-toc {
   display: none;
-  flex: right;
+  flex: left;
   width: 25%;
   margin-right: -220px;
   opacity: 0.8;
@@ -940,16 +940,19 @@ ul li a:focus {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 220px;
-  padding-top: 55px;
+  right: 0px;
+  padding-top: 60px;
 }
 .fixed #article-toc-inner {
   position: fixed;
-  width: 220px;
+  left: 0;
   top: 0;
   bottom: 0;
-  padding-top: 55px;
+  padding-top: 60px;
 }
 #article-toc-inner ol {
   margin-left: -16px;
+}
+.toc-link {
+  color: #1d8883;
 }
