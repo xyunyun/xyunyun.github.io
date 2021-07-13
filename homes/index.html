@@ -111,6 +111,35 @@
   
     <article class="post">
       <div class="post-meta">
+        <span class="post-time">2020-12-29</span>
+      </div>
+      <div class="post-title">
+        
+          <a class="post-title-link" href="/2020/12/29/dome%E7%A4%BA%E4%BE%8B/">
+            
+              dome示例
+            
+          </a>
+          
+        
+        <div class="post-tags">
+          
+        </div>
+      </div>
+      <div class="post-content">
+
+        
+        
+        <!-- 
+        <p>1.巴拉巴拉巴拉</p>
+<p>2.啦啦啦啦啦</p>
+
+         -->
+      </div>
+    </article>
+  
+    <article class="post">
+      <div class="post-meta">
         <span class="post-time">2020-12-22</span>
       </div>
       <div class="post-title">
@@ -151,35 +180,6 @@
       </div>
       <div class="post-title">
         
-          <a class="post-title-link" href="/2020/12/29/dome%E7%A4%BA%E4%BE%8B/">
-            
-              dome示例
-            
-          </a>
-          
-        
-        <div class="post-tags">
-          
-        </div>
-      </div>
-      <div class="post-content">
-
-        
-        
-        <!-- 
-        <p>1.巴拉巴拉巴拉</p>
-<p>2.啦啦啦啦啦</p>
-
-         -->
-      </div>
-    </article>
-  
-    <article class="post">
-      <div class="post-meta">
-        <span class="post-time">2020-12-29</span>
-      </div>
-      <div class="post-title">
-        
           <a class="post-title-link" href="/2020/12/29/hexo-%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">
             
               hexo 遇到的问题
@@ -202,50 +202,6 @@
 <p>c.在主题layout文件里写样式</p>
 <p>d.写跳转到此页面的路径</p>
 <p>注意：路径正确！！！</p>
-
-         -->
-      </div>
-    </article>
-  
-    <article class="post">
-      <div class="post-meta">
-        <span class="post-time">2021-01-13</span>
-      </div>
-      <div class="post-title">
-        
-          <a class="post-title-link" href="/2021/01/13/odoo14/">
-            
-              odoo14
-            
-          </a>
-          
-        
-        <div class="post-tags">
-          
-        </div>
-      </div>
-      <div class="post-content">
-
-        
-        
-        <!-- 
-        <hr>
-<p><u>odoo 资料：<a target="_blank" rel="noopener" href="http://www.odoov.com/">http://www.odoov.com/</a></u></p>
-<p><u>d数据库地址<a target="_blank" rel="noopener" href="http://localhost:8069/web/database/selector">http://localhost:8069/web/database/selector</a></u></p>
-<p><strong>问：忘记后台登录密码？</strong></p>
-<p># 生成加密的密码</p>
-<p>frompasslib.contextimportCryptContext</p>
-<p>printCryptContext([‘pbkdf2_sha512’]).encrypt(‘123456’)</p>
-<p>#进入数据库（以默认 odoo 为例）</p>
-<p>sudo su-postgres</p>
-<p>\c odoo</p>
-<p># 更新密码（假设用为 id 为 1，可通过 SELECT 进行查询）</p>
-<p>UPDATE res_users SET password_crypt=’your new password hash’WHEREid=2;</p>
-<p>odoo命令行</p>
-<p>创建新模块</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python odoo-bin scaffold &lt;module name&gt; &lt;where to put it&gt;</span><br></pre></td></tr></table></figure>
-<p>运行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$python odoo-bin -c odoo.conf</span><br></pre></td></tr></table></figure>
 
          -->
       </div>
@@ -326,7 +282,8 @@
 <p>3.ref<br>父组件在使用子组件的时候设置ref<br>this.$refs获取子组件实例<br>4.EventBus（不会不懂）<br>5.$parent 或$ root<br>通过共同祖辈$parent或者$root搭建通信侨联<br>兄弟组件this.$parent.on(‘add’,this.add)<br>另一个兄弟组件this.$parent.emit(‘add’)<br>6.#$attrs 与$ listeners（不会不懂）<br>7.provide 与 inject<br>在祖先组件定义provide属性，返回传递的值<br>在后代组件通过inject接收组件传递过来的值</p>
 <h2 id="vm-set-解决对象新增属性不响应"><a href="#vm-set-解决对象新增属性不响应" class="headerlink" title="vm.$set()解决对象新增属性不响应"></a>vm.$set()解决对象新增属性不响应</h2><h2 id="自定义指令"><a href="#自定义指令" class="headerlink" title="自定义指令"></a>自定义指令</h2><h2 id="vue过滤器"><a href="#vue过滤器" class="headerlink" title="vue过滤器"></a>vue过滤器</h2><h2 id="keep-alive"><a href="#keep-alive" class="headerlink" title="keep-alive"></a>keep-alive</h2><p>用于保留组件状态,会缓存不活动的组件实例，而不是销毁它们;<br>避免组件重新渲染。自身不会渲染一个 DOM 元素，也不会出现在组件的父组件链中。</p>
 <h2 id="Vue-nextTick-的原理和用途"><a href="#Vue-nextTick-的原理和用途" class="headerlink" title="Vue.nextTick 的原理和用途"></a>Vue.nextTick 的原理和用途</h2><p>把回调函数放入callbacks等待执行<br>将执行函数放到微任务或者宏任务中<br>事件循环到了微任务或者宏任务，执行函数依次执行callbacks中的回调<br>用法：<br>在下次 DOM 更新循环结束之后执行延迟回调;在修改数据之后立即使用这个方法，获取更新后的 DOM。</p>
-<h2 id="混入"><a href="#混入" class="headerlink" title="混入"></a>混入</h2><h2 id="Element-UI-实现管理系统页面权限控制"><a href="#Element-UI-实现管理系统页面权限控制" class="headerlink" title="Element UI 实现管理系统页面权限控制"></a>Element UI 实现管理系统页面权限控制</h2><p>1 创建vue实例的时候将vue-router挂载，但这个时候vue-router挂载一些登录或者不用权限的公用的页面。</p>
+<h2 id="混入Mixin"><a href="#混入Mixin" class="headerlink" title="混入Mixin"></a>混入Mixin</h2><p>Mixin提供了一种方式，来分发Vue组件中的可复用功能。一个mixin对象可以包含任意组件选项</p>
+<h2 id="Element-UI-实现管理系统页面权限控制"><a href="#Element-UI-实现管理系统页面权限控制" class="headerlink" title="Element UI 实现管理系统页面权限控制"></a>Element UI 实现管理系统页面权限控制</h2><p>1 创建vue实例的时候将vue-router挂载，但这个时候vue-router挂载一些登录或者不用权限的公用的页面。</p>
 <p>2 当用户登录后，获取用role，将role和路由表每个页面的需要的权限作比较，生成最终用户可访问的路由表。</p>
 <p>3 调用router.addRoutes(store.getters.addRouters)添加用户可访问的路由。</p>
 <p>4 使用vuex管理路由表，根据vuex中可访问的路由渲染侧边栏组件。</p>
@@ -365,6 +322,114 @@
   
     <article class="post">
       <div class="post-meta">
+        <span class="post-time">2021-01-13</span>
+      </div>
+      <div class="post-title">
+        
+          <a class="post-title-link" href="/2021/01/13/odoo14/">
+            
+              odoo14
+            
+          </a>
+          
+        
+        <div class="post-tags">
+          
+        </div>
+      </div>
+      <div class="post-content">
+
+        
+        
+        <!-- 
+        <hr>
+<p><u>odoo 资料：<a target="_blank" rel="noopener" href="http://www.odoov.com/">http://www.odoov.com/</a></u></p>
+<p><u>d数据库地址<a target="_blank" rel="noopener" href="http://localhost:8069/web/database/selector">http://localhost:8069/web/database/selector</a></u></p>
+<p><strong>问：忘记后台登录密码？</strong></p>
+<p># 生成加密的密码</p>
+<p>frompasslib.contextimportCryptContext</p>
+<p>printCryptContext([‘pbkdf2_sha512’]).encrypt(‘123456’)</p>
+<p>#进入数据库（以默认 odoo 为例）</p>
+<p>sudo su-postgres</p>
+<p>\c odoo</p>
+<p># 更新密码（假设用为 id 为 1，可通过 SELECT 进行查询）</p>
+<p>UPDATE res_users SET password_crypt=’your new password hash’WHEREid=2;</p>
+<p>odoo命令行</p>
+<p>创建新模块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python odoo-bin scaffold &lt;module name&gt; &lt;where to put it&gt;</span><br></pre></td></tr></table></figure>
+<p>运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$python odoo-bin -c odoo.conf</span><br></pre></td></tr></table></figure>
+
+         -->
+      </div>
+    </article>
+  
+    <article class="post">
+      <div class="post-meta">
+        <span class="post-time">2021-02-03</span>
+      </div>
+      <div class="post-title">
+        
+          <a class="post-title-link" href="/2021/02/03/note/">
+            
+              note
+            
+          </a>
+          
+        
+        <div class="post-tags">
+          
+        </div>
+      </div>
+      <div class="post-content">
+
+        
+        
+        <!-- 
+        
+         -->
+      </div>
+    </article>
+  
+    <article class="post">
+      <div class="post-meta">
+        <span class="post-time">2021-07-12</span>
+      </div>
+      <div class="post-title">
+        
+          <a class="post-title-link" href="/2021/07/12/%E8%87%AA%E5%B7%B1%E5%86%99%E4%B8%80%E4%B8%AAhexo%E4%B8%BB%E9%A2%98/">
+            
+              Untitled
+            
+          </a>
+          
+        
+        <div class="post-tags">
+          
+        </div>
+      </div>
+      <div class="post-content">
+
+        
+        
+        <!-- 
+        <p>自己写一个hexo主题</p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/a142eb105279?utm_campaign=maleskine...&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendzijiation">https://www.jianshu.com/p/a142eb105279?utm_campaign=maleskine...&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendzijiation</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/yyhh/p/11058985.html">https://www.cnblogs.com/yyhh/p/11058985.html</a></p>
+<p>关于hexo主题设置</p>
+<p><a target="_blank" rel="noopener" href="https://sunhwee.com/posts/6e8839eb.html#toc-heading-23">https://sunhwee.com/posts/6e8839eb.html#toc-heading-23</a></p>
+<p><a target="_blank" rel="noopener" href="https://yafine-blog.cn/">https://yafine-blog.cn/</a></p>
+<p>hexo 主题</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/littleee/corazon.git">https://github.com/littleee/corazon.git</a></p>
+<p>纯 CSS3 开门效果</p>
+<p><a target="_blank" rel="noopener" href="https://www.jq22.com/webqd1313">https://www.jq22.com/webqd1313</a></p>
+
+         -->
+      </div>
+    </article>
+  
+    <article class="post">
+      <div class="post-meta">
         <span class="post-time">2020-12-29</span>
       </div>
       <div class="post-title">
@@ -395,33 +460,6 @@
 
 <p>浏览器设置了主页，</p>
 
-         -->
-      </div>
-    </article>
-  
-    <article class="post">
-      <div class="post-meta">
-        <span class="post-time">2021-02-03</span>
-      </div>
-      <div class="post-title">
-        
-          <a class="post-title-link" href="/2021/02/03/note/">
-            
-              note
-            
-          </a>
-          
-        
-        <div class="post-tags">
-          
-        </div>
-      </div>
-      <div class="post-content">
-
-        
-        
-        <!-- 
-        
          -->
       </div>
     </article>
