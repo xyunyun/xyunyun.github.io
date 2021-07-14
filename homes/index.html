@@ -215,7 +215,7 @@
         
           <a class="post-title-link" href="/2021/06/28/%E6%AD%A3%E7%BB%8F%E7%9A%84%E7%9F%A5%E8%AF%86/">
             
-              前端面试题
+              正经的知识
             
           </a>
           
@@ -234,8 +234,10 @@
 <p>相比之下，<code>v-show</code> 就简单得多——不管初始条件是什么，元素总是会被渲染，并且只是简单地基于 CSS display 进行切换。</p>
 <p>一般来说，<code>v-if</code> 有更高的切换开销，而 <code>v-show</code> 有更高的初始渲染开销。因此，如果需要非常频繁地切换，则使用 <code>v-show</code> 较好；如果在运行时条件很少改变，则使用 <code>v-if</code> 较好。</p>
 <h2 id="Vue生命周期"><a href="#Vue生命周期" class="headerlink" title="Vue生命周期"></a>Vue生命周期</h2><p>创建阶段<br>beforeCreate<br>实例刚在内存中被创建出来，此时，还没有初始化好data和methods属性。<br>created<br>实例已经在内存中创建完毕，此时data和methods已经创建完成，此时还没有开始编译模板。<br>挂载阶段<br>beforeMount<br>此时已经完成了模板的编译，但是还没有挂载到页面中。<br>mounted<br>此时已经将编译好的模板挂载到了页面指定的容器中显示。<br>运行阶段<br>boforeUpdate<br>状态更新之前执行此类函数，此时data中的状态值是最新的，但是界面上显示的数据还是旧的，因为此时还没有开始重新渲染DOM节点。<br>updated<br>实例更新完毕之后调用此函数，此时data中的状态值和页面上显示的数据都已经完成了更新，界面已经被重新渲染好了。<br>销毁阶段<br>beforeDestroy<br>实例销毁之前调用，在这一步，实例仍然完全可用。<br>destroyed<br>Vue实例销毁后调用，调用后Vue实例指示的所有东西都会解除绑定，所有的事件监听器都会被移除，所有的子实例也会被销毁</p>
-<h2 id="vue双向数据绑定原理"><a href="#vue双向数据绑定原理" class="headerlink" title="vue双向数据绑定原理"></a>vue双向数据绑定原理</h2><p>vue.js 是采用数据劫持结合发布者-订阅者模式的方式，通过Object.defineProperty()来劫持各个属性的 setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。</p>
+<h2 id="父子组件的生命周期钩子函数执行顺序"><a href="#父子组件的生命周期钩子函数执行顺序" class="headerlink" title="父子组件的生命周期钩子函数执行顺序"></a>父子组件的生命周期钩子函数执行顺序</h2><h2 id="vue双向数据绑定原理"><a href="#vue双向数据绑定原理" class="headerlink" title="vue双向数据绑定原理"></a>vue双向数据绑定原理</h2><p>vue.js 是采用数据劫持结合发布者-订阅者模式的方式，通过Object.defineProperty()来劫持各个属性的 setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。</p>
 <h2 id="vue单向数据流"><a href="#vue单向数据流" class="headerlink" title="vue单向数据流"></a>vue单向数据流</h2><h2 id="虚拟dom"><a href="#虚拟dom" class="headerlink" title="虚拟dom"></a>虚拟dom</h2><p>Virtual DOM是JS对象去描述DOM节点，vue中由 Vue 组件树建立起来的整个 VNode 树，经过Vnode的create、diff算法、patch等过程映射到真实的DOM，包含标签名，标签上的属性，事件监听和子元素们及属性，<br>原理：为了解决浏览器的性能问题，真正的DOM元素非常庞大，js的操作速度更快。<br>减少了DOM操作，可以跨平台渲染</p>
+<h2 id="key"><a href="#key" class="headerlink" title="key"></a>key</h2><p>key的特殊attribute主要用在Vue的虚拟DOM算法，给节点做一个唯一标识。<br>使用key时,diff算法会基于key的变化重新排列DOM元素顺序，并且会移除/销毁key不存在的元素。有相同父元素的子元素必须有独特的key，重复的key会造成渲染错误。<br>也可以用于强制替换元素/组件，需要完整地触发组件的生命周期钩子和触发过渡。<br>对于 v-if/v-else/v-else-if 的各分支项 Vue3 会自动生成唯一的 key<br>在 Vue 3.x 中 key 应该被设置在<template> 标签上。</template></p>
+<h2 id="vm-set-解决对象新增属性不响应"><a href="#vm-set-解决对象新增属性不响应" class="headerlink" title="vm.$set()解决对象新增属性不响应"></a>vm.$set()解决对象新增属性不响应</h2><p>响应式系统没有监听到的数据，用+new Date()生成的时间戳作为key，手动强制触发重新渲染</p>
 <h2 id="一个组件的data选项必须是一个函数"><a href="#一个组件的data选项必须是一个函数" class="headerlink" title="一个组件的data选项必须是一个函数"></a>一个组件的data选项必须是一个函数</h2><p>为了组件的复用，对象是一个引用数据类型，如果data是一个对象的情况下会造成所有组件共用一个data。而当data是一个函数的情况下，每次函数执行完毕后都会返回一个新的对象，这样的话每个组件都会维护一份独立的对象</p>
 <h2 id="计算属性和侦听属性"><a href="#计算属性和侦听属性" class="headerlink" title="计算属性和侦听属性"></a>计算属性和侦听属性</h2><p>计算属性是基于它们的响应式依赖进行缓存的，只在相关响应式依赖发生改变时它们才会重新求值；</p>
 <p>watch选项允许我们执行异步操作 (访问一个 API)，限制我们执行该操作的频率，并在我们得到最终结果前，设置中间状态。这些都是计算属性无法做到的</p>
@@ -280,9 +282,9 @@
 <li>将需要传的值作为$emit的第二个参数，该值将作为实参传给响应事件的方法</li>
 </ul>
 <p>3.ref<br>父组件在使用子组件的时候设置ref<br>this.$refs获取子组件实例<br>4.EventBus（不会不懂）<br>5.$parent 或$ root<br>通过共同祖辈$parent或者$root搭建通信侨联<br>兄弟组件this.$parent.on(‘add’,this.add)<br>另一个兄弟组件this.$parent.emit(‘add’)<br>6.#$attrs 与$ listeners（不会不懂）<br>7.provide 与 inject<br>在祖先组件定义provide属性，返回传递的值<br>在后代组件通过inject接收组件传递过来的值</p>
-<h2 id="vm-set-解决对象新增属性不响应"><a href="#vm-set-解决对象新增属性不响应" class="headerlink" title="vm.$set()解决对象新增属性不响应"></a>vm.$set()解决对象新增属性不响应</h2><h2 id="自定义指令"><a href="#自定义指令" class="headerlink" title="自定义指令"></a>自定义指令</h2><h2 id="vue过滤器"><a href="#vue过滤器" class="headerlink" title="vue过滤器"></a>vue过滤器</h2><h2 id="keep-alive"><a href="#keep-alive" class="headerlink" title="keep-alive"></a>keep-alive</h2><p>用于保留组件状态,会缓存不活动的组件实例，而不是销毁它们;<br>避免组件重新渲染。自身不会渲染一个 DOM 元素，也不会出现在组件的父组件链中。</p>
-<h2 id="Vue-nextTick-的原理和用途"><a href="#Vue-nextTick-的原理和用途" class="headerlink" title="Vue.nextTick 的原理和用途"></a>Vue.nextTick 的原理和用途</h2><p>把回调函数放入callbacks等待执行<br>将执行函数放到微任务或者宏任务中<br>事件循环到了微任务或者宏任务，执行函数依次执行callbacks中的回调<br>用法：<br>在下次 DOM 更新循环结束之后执行延迟回调;在修改数据之后立即使用这个方法，获取更新后的 DOM。</p>
-<h2 id="混入Mixin"><a href="#混入Mixin" class="headerlink" title="混入Mixin"></a>混入Mixin</h2><p>Mixin提供了一种方式，来分发Vue组件中的可复用功能。一个mixin对象可以包含任意组件选项</p>
+<h2 id="自定义指令"><a href="#自定义指令" class="headerlink" title="自定义指令"></a>自定义指令</h2><h2 id="vue过滤器"><a href="#vue过滤器" class="headerlink" title="vue过滤器"></a>vue过滤器</h2><h2 id="keep-alive"><a href="#keep-alive" class="headerlink" title="keep-alive"></a>keep-alive</h2><p>用于保留组件状态,会缓存不活动的组件实例，而不是销毁它们;<br>避免组件重新渲染。自身不会渲染一个 DOM 元素，也不会出现在组件的父组件链中。</p>
+<h2 id="Vue-nextTick-的原理和用途"><a href="#Vue-nextTick-的原理和用途" class="headerlink" title="Vue.nextTick 的原理和用途"></a>Vue.nextTick 的原理和用途</h2><p>把回调函数放入callbacks等待执行<br>将执行函数放到微任务或者宏任务中<br>事件循环到了微任务或者宏任务，执行函数依次执行callbacks中的回调<br>用法：<br>在下次 DOM 更新循环结束之后执行延迟回调;在修改数据之后立即使用这个方法，获取更新后的 DOM结构。</p>
+<h2 id="混入Mixin"><a href="#混入Mixin" class="headerlink" title="混入Mixin"></a>混入Mixin</h2><p>Mixin提供了一种方式，来分发Vue组件中的可复用功能。一个mixin对象可以包含任意组件选项.当组件使用mixin对象时，所有mixin对象的选项将被“混合”进入该组件本身的选项。</p>
 <h2 id="Element-UI-实现管理系统页面权限控制"><a href="#Element-UI-实现管理系统页面权限控制" class="headerlink" title="Element UI 实现管理系统页面权限控制"></a>Element UI 实现管理系统页面权限控制</h2><p>1 创建vue实例的时候将vue-router挂载，但这个时候vue-router挂载一些登录或者不用权限的公用的页面。</p>
 <p>2 当用户登录后，获取用role，将role和路由表每个页面的需要的权限作比较，生成最终用户可访问的路由表。</p>
 <p>3 调用router.addRoutes(store.getters.addRouters)添加用户可访问的路由。</p>
