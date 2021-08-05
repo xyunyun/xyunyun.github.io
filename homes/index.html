@@ -300,7 +300,7 @@
 <h2 id="防抖和节流"><a href="#防抖和节流" class="headerlink" title="防抖和节流"></a>防抖和节流</h2><p>防抖，在事件触发指定时间之后才会执行相应的处理，若在这指定时间内事件又被调用，则会重新计时执行。对于短时间内连续触发的事件在一定时间期限内，事件处理函数只执行一次。</p>
 <p>节流如果短时间内大量触发同一事件，那么在函数执行一次之后，该函数在指定的时间期限内不再工作，直至过了这段时间才重新生效。</p>
 <h2 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h2><p>每个实例对象（ object ）都有一个私有属性（__ proto__ ）指向它的构造函数的原型对象（<strong>prototype</strong> ）的链。<br>当试图访问一个对象的属性时，它不仅仅在该对象上搜寻，还会搜寻该对象的原型，以及该对象的原型的原型，依次层层向上搜索，直到找到一个名字匹配的属性或到达原型链的末尾null。</p>
-<h2 id="call-、apply-区别"><a href="#call-、apply-区别" class="headerlink" title="call()、apply()区别"></a>call()、apply()区别</h2><p><strong><code>call()</code></strong> 方法使用一个指定的 <code>this</code> 值和单独给出的一个或多个参数来调用一个函数。</p>
+<h2 id="call-、call-区别"><a href="#call-、call-区别" class="headerlink" title="call()、call()区别"></a>call()、call()区别</h2><p><strong><code>call()</code></strong> 方法使用一个指定的 <code>this</code> 值和单独给出的一个或多个参数来调用一个函数。</p>
 <p><strong><code>apply()</code></strong> 方法调用一个具有给定<code>this</code>值的函数，以及以一个数组（或类数组对象)的形式提供的参数</p>
 <p><code>call()</code> 方法接受的是<strong>一个参数列表</strong>，而 <code>apply()</code> 方法接受的是<strong>一个包含多个参数的数组</strong>。</p>
 <h2 id="什么是闭包"><a href="#什么是闭包" class="headerlink" title="什么是闭包"></a>什么是闭包</h2><p>闭包指有权访问另一个函数作用域中变量的<strong>函数</strong>，</p>
